@@ -1,0 +1,66 @@
+/* Footer Styles */
+footer {
+  background: linear-gradient(90deg, #660000 0%, #000080 100%);
+  padding: 2rem 0;
+  margin-top: auto; 
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer h5 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  position: relative;
+  font-weight: 500;
+}
+
+footer ul li {
+  margin-bottom: 0.75rem;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .social-icons a {
+  font-size: 1.5rem;
+
+}
+
+footer .copyright {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+ .social-icons a i{
+  display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 100px;
+	color: white;
+	transition: all 0.5s;
+}
+
+ .social-icons a i:hover {
+  color: #070707;
+	background-color: #e9dfdf;
+}
+
+.accordion-item{
+  background: linear-gradient(90deg, #660000 0%, #000080 100%);
+}
+

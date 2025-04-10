@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/views/styles/footer.css">
+    <link rel="stylesheet" href="/views/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/tahoma" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header -->
+  <header class="fixed-top header">
+    <div class="container d-flex justify-content-between align-items-center py-2 text-white">
+      <a href="#" class="d-flex align-items-center text-decoration-none">
+        <img src="/assets/Images/gym-logo.jpg" alt="Power Gym Logo" class="rounded-circle" height="45">
+        <div class="d-none d-lg-block text-light fw-bold ms-2">
+          <span>POWER GYM</span>
+          <hr class="m-1">
+          <span>CARIG SUR BRANCH</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center">
+        <div class="me-2">
+          <i class="bi bi-envelope-fill fs-5 p-2 rounded-circle border border-light"></i>
+        </div>
+        <div>
+          <h6 class="mb-0">FOR SUPPORT MAIL US:</h6>
+          <p class="mb-0">powergym-management@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Login Page -->
+  <main id="login-page" class="container-fluid d-flex justify-content-center align-items-center py-5 hero">
+    <div class="col-xl-4 col-lg-5 col-md-7 col-sm-9 col-10 bg-light rounded py-4 px-4">
+      <img src="/assets/Icons/dumbbell.png" alt="#" class="mx-auto d-block" height="80">
+      <h3 class="fw-bold text-center mt-3">Gym Management System</h3>
+      <p class="text-muted text-center">Enter your details to access the system</p>
+      <form>
+        <div class="form-group">
+          <label for="username" class="fw-semibold">Username</label>
+          <input id="username" type="text" name="username" placeholder="Enter your username" class="form-control mt-2" required>
+        </div>
+        <div class="form-group mt-3">
+          <label for="password" class="fw-semibold">Password</label>
+          <input id="password" type="password" name="password" placeholder="Enter your password" class="form-control mt-2" required>
+        </div>
+        <div class="form-group mt-4">
+          <!-- <button type="submit" >Login</button> -->
+           <a href="/views/home.html" type="submit" class="btn btn-primary w-100 rounded-5 login-button">Login</a>
+        </div>
+        <a href="#" class="text-decoration-none d-block mt-3 text-center">Forgot password?</a>
+        <p class="text-center mt-3">Don't have an account? <a href="signup.html" class="text-decoration-none">Click here</a></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="mt-auto bg-dark text-white py-4">
+    <div class="container">
+      <!-- Collapsible Footer Sections -->
+      <div class="accordion d-md-none" id="footerAccordion">
+        <!-- Gym Information Section -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingInfo">
+            <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo" aria-expanded="true" aria-controls="collapseInfo">
+              About Us
+            </button>
+          </h2>
+          <div id="collapseInfo" class="accordion-collapse collapse show" aria-labelledby="headingInfo" data-bs-parent="#footerAccordion">
+            <div class="accordion-body">
+              <ul class="list-unstyled text-white">
+                <li><i class="bi bi-geo-alt"></i> Carig Sur, Tuguegarao City</li>
+                <li><i class="bi bi-telephone"></i> (078) 123-4567</li>
+                <li><i class="bi bi-envelope-fill"></i> powergym-management@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Social Media Section -->
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header" id="headingSocial">
+            <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSocial" aria-expanded="false" aria-controls="collapseSocial">
+              Follow Us
+            </button>
+          </h2>
+          <div id="collapseSocial" class="accordion-collapse collapse" aria-labelledby="headingSocial" data-bs-parent="#footerAccordion">
+            <div class="accordion-body">
+              <div class="social-icons">
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-messenger"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Expanded Footer for Desktop -->
+      <div class="d-none d-md-flex justify-content-lg-between">
+        <!-- Gym Information -->
+        <div>
+          <h5>About Us</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt"></i> Carig Sur, Tuguegarao City</li>
+            <li><i class="bi bi-telephone"></i> (078) 123-4567</li>
+            <li><i class="bi bi-envelope"></i> powergym-management@gmail.com</li>
+          </ul>
+        </div>
+    
+        <!-- Social Media -->
+        <div>
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-messenger"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <hr>
+      <!-- Copyright -->
+      <div class="text-center mt-3">
+        <small>&copy; 2024 Power Gym. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

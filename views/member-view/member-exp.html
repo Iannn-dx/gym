@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Experience</title>
+
+   <!-- CSS and JS -->
+   <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+   <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+   <!-- fonts -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.cdnfonts.com/css/tahoma" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+   <link rel="stylesheet" href="/views/styles/styles.css">
+   <link rel="stylesheet" href="/views/styles/footer.css">
+
+   <style>
+    body{
+      padding-top: 86px;
+      background-color: rgb(226, 226, 226);
+    }
+   </style>
+
+</head>
+<body>
+     <!-- header --> 
+     <header class="fixed-top header">
+      <div class="text-white container d-flex justify-content-between align-items-center py-2">
+          <a class="d-flex align-items-center text-decoration-none" href="#">
+              <img class="rounded-circle" src="/assets/Images/gym-logo.jpg" height="45">
+              <div class="text-white d-lg-block d-none fs-6 text-light fw-bold montserrat d-flex flex-column justify-content-center ms-2">
+                  <span>POWER GYM</span>
+                  <hr class="m-1">
+                  <span>CARIG SUR BRANCH</span>
+              </div>
+          </a>
+
+          <div class="d-flex align-items-center">
+              <div class="me-2">
+                  <i class="bi bi-envelope-fill text-white fs-5 py-2 px-2 pt-1 rounded-circle border border-light"></i>
+              </div>
+              <div>
+                  <h6 class="mb-0">FOR SUPPORT MAIL US:</h6>
+                  <p class="mb-0">powergym-management@gmail.com</p>
+              </div>      
+          </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2 p-1 nav">
+          <div class="container-fluid d-flex justify-content-md-evenly">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="bi bi-list"></i>
+              </button>
+
+              <!-- navbar components -->
+              <div class="collapse navbar-collapse d-lg-flex" id="navbar-content">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active mx-lg-2" aria-current="page" href="/views/home.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle mx-lg-2" href="#" id="feature-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                              Features
+                          </a>
+                          <ul class="dropdown-menu features-menu" aria-labelledby="feature-dropdown">
+                              <li><a class="dropdown-item" href="/views/member-view/payment.html"><i class="bi bi-credit-card payment"></i>Payments</a></li>
+                              <li><a class="dropdown-item" href="/views/member-view/member-exp.html"><i class="bi bi-star experience"></i>Member Experience</a></li>
+                              <li><a class="dropdown-item" href="/views/member-view/loyalty.html"><i class="bi bi-gift loyal"></i>Loyalty Program</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link mx-lg-2" href="/views/home.html">Memberships</a>
+                      </li>
+                  </ul>
+
+                  <!-- right section; search bar -->
+                  <form class="d-flex me-1 ms-auto mt-lg-0 mt-3">
+                      <div class="input-group">
+                          <span class="input-group-text"><i class="bi bi-search"></i></span>
+                          <input type="search" class="form-control search-bar" placeholder="Search services..." aria-label="Search">
+                      </div>
+                  </form>
+
+                  <!-- user profile dropdown-menu -->
+                  <div class="dropdown me-3">
+                      <button class="btn btn-outline-dark rounded-circle text-white dropdown-toggle user-account-menu" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="/assets/Images/user-icon.jpg" class="rounded-circle" height="35" alt="User Profile Picture">
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-end user-account-links" aria-labelledby="userDropdown">
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Profile</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-shield-lock"></i> Change Password</a></li>
+                          <li><a class="dropdown-item text-danger" href="/views/login.html"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                      </ul>
+                  </div>                                            
+              </div>
+          </div>
+      </nav>
+  </header> <hr>
+
+  <!-- title -->
+    <div class="container mt-5">
+      <hr>
+      <h5 class="fw-bold fs-3">Member Experience</h5>
+      <p class="small">Enhance your fitness journey with our exclusive Member Experience, offering personalized services, priority booking, and special rewards tailored to your commitment and progress!</p>
+      <hr class="mb-2 pb-2">
+    </div>
+
+    <!-- content upper row
+     <div class="row mt-3">
+      <div class="col-md-6 mx-auto text-center">
+          <div class="d-flex justify-content-center align-items-center">
+            <div>
+              <img src="/assets/Images/user-icon.jpg" class="rounded-circle shadow" height="100" alt="#">
+              <h5 class="fw-bold fs-3 mt-2">New User</h5>
+              <p class="small pt-0">Member since 2022</p>
+            </div>
+          </div>
+      </div>
+     </div> -->
+
+     <div class="container" >
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="card mb-4 shadow" style="border-radius: 24px;">
+                    <div class="card-body text-center text-light py-4" style="background-color: #16213e; border-radius: 24px;">
+                        <div class="position-relative d-inline-block mb-3">
+                            <img src="/assets/Images/user-icon.jpg" height="100" class="rounded-circle border border-4 border-secondary shadow"/>
+                        </div>
+                        <h2 class="h3 mb-2">John Doe</h2>
+                        <p class="small text-light-emphasis">Member since 2022</p> <hr>
+                        
+                        <!-- Quick Stats -->
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-md-3">                          
+                                    <i class="bi bi-trophy text-primary fs-4"></i>
+                                    <h5 class="mt-2 mb-0">Active</h5>
+                                    <small class="text-light-emphasis">Status</small>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="stat-card">
+                                    <i class="bi bi-clock text-primary fs-4"></i>
+                                    <h5 class="mt-2 mb-0">2 Years</h5>
+                                    <small class="text-light-emphasis">Duration</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="stat-card">
+                                    <i class="bi bi-person-fill-up fs-4 text-primary"></i>
+                                    <h5 class="mt-2 mb-0">Student</h5>
+                                    <small class="text-light-emphasis">Membership</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div> <hr>
+     </div> 
+
+     <!-- ard -->
+      <div class="container py-3">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card pt-2 alert alert-warning">
+                    <div class="card-body pb-0">
+                        <h5 class="text-warning">Membership Renewal Required <span class="text-warning ms-3"><i class="bi bi-exclamation-circle-fill"></i></span></h5> <hr class="text-warning">
+                        <p class="small text-white">Your membership will expire in 15 days. Renew now to maintain access to all benefits!</p>
+                        <p class="small card-text">Note: Don't miss out—ensure your fitness journey stays on track!</p> <hr class="text-warning">
+                    </div>
+                    <div class="card-footer">
+                        <a href="/views/member-view/payment.html" class="btn btn-sm btn-warning w-100 fw-semibold" style="font-family: montserrat;">Renew Membership</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- seconf card -->
+            <div class="col-lg-4">
+                <div class="card pt-2 alert">
+                    <div class="card-body pb-0 ">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="text-white">Membership Details </h5> <span class="text-light fs-3"><i class="bi bi-list-check"></i></span> 
+                        </div> <hr class="text-white"> 
+                           
+                        <p class="small text-white">Member Name: <span>John Doe</span> </p>
+                        <p class="small text-white">Member status: <span class="text-warning">Expiring soon</span> </p>
+                        <p class="small text-white">Membership type: <span>Student</span> </p>
+                        <p class="small text-white">Expiration date: <span>February 25, 2025</span> </p>
+                        <form action="">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label text-light">
+                              Auto Renewal
+                            </label>
+                        </form> <hr class="text-white">
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-outline-primary w-100 fw-semibold" style="font-family: montserrat;">Edit Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- thirs -->
+            <div class="col-lg-4">
+                <div class="card pt-2 alert">
+                    <div class="card-body pb-0">
+                        <table class="table table-striped table-sm table-dark">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-light">Recent Payment History</h5> <span class="text-light fs-3"><i class="bi bi-clock-history"></i></span>
+                            </div> <hr class="text-light">
+                            <thead>
+                                <tr>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                    <td>Status</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2024-09-01</td>
+                                    <td>&#8369; 800.00</td>
+                                    <td><span class="badge bg-success">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2024-10-01</td>
+                                    <td>&#8369; 800.00</td>
+                                    <td><span class="badge bg-success">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2024-11-01</td>
+                                    <td>&#8369; 800.00</td>
+                                    <td><span class="badge bg-success">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2024-12-01</td>
+                                    <td>&#8369; 800.00</td>
+                                    <td><span class="badge bg-danger">Overdue</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> <hr class="text-light">
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-outline-primary w-100 fw-semibold" style="font-family: montserrat;">View Transactions</a>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div> <hr>
+
+      <!-- feedbacl -->
+      <div class="container py-3">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card mb-lg-3 sm-md-3">
+                    <div class="card-body alert-warning py-4 rounded-3">
+                        <h5 class="card-title mb-4 text-light">Provide Feedback</h5> <hr class="text-light">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label mb-3 text-light">How satisfied are you with our service?</label>
+                                <div class="btn-group w-100" role="group">
+                                    <input type="radio" class="btn-check">
+                                    <label class="btn btn-outline-primary">Very Satisfied</label>
+                                    <input type="radio" class="btn-check" >
+                                    <label class="btn btn-outline-primary">Satisfied</label>
+                                    <input type="radio" class="btn-check" >
+                                    <label class="btn btn-outline-primary">Neutral</label>
+                                    <input type="radio" class="btn-check">
+                                    <label class="btn btn-outline-primary">Unsatisfied</label>
+                                </div>
+                            </div>
+                            <div class="mb-3 py-2">
+                                <label class="form-label text-light">Your Comments</label>
+                                <textarea class="form-control bg-light text-dark" rows="3" placeholder="Share your thoughts..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit Feedback</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+<footer class="mt-auto bg-dark text-white py-4">
+    <div class="container">
+      <!-- Collapsible Footer Sections -->
+      <div class="accordion d-md-none" id="footerAccordion">
+        <!-- Gym Information Section -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingInfo">
+            <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo" aria-expanded="true" aria-controls="collapseInfo">
+              Power Gym
+            </button>
+          </h2>
+          <div id="collapseInfo" class="accordion-collapse collapse show" aria-labelledby="headingInfo" data-bs-parent="#footerAccordion">
+            <div class="accordion-body">
+              <ul class="list-unstyled text-white">
+                <li><i class="bi bi-geo-alt"></i> Carig Sur, Tuguegarao City</li>
+                <li><i class="bi bi-telephone"></i> (078) 123-4567</li>
+                <li><i class="bi bi-envelope-fill"></i> powergym-management@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Quick Links Section -->
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header" id="headingLinks">
+            <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinks" aria-expanded="false" aria-controls="collapseLinks">
+              Quick Links
+            </button>
+          </h2>
+          <div id="collapseLinks" class="accordion-collapse collapse" aria-labelledby="headingLinks" data-bs-parent="#footerAccordion">
+            <div class="accordion-body">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Features</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Memberships</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Schedule</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Social Media Section -->
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header" id="headingSocial">
+            <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSocial" aria-expanded="false" aria-controls="collapseSocial">
+              Follow Us
+            </button>
+          </h2>
+          <div id="collapseSocial" class="accordion-collapse collapse" aria-labelledby="headingSocial" data-bs-parent="#footerAccordion">
+            <div class="accordion-body">
+              <div class="social-icons">
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-messenger"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Expanded Footer for Desktop -->
+      <div class="d-none d-md-flex justify-content-between">
+        <!-- Gym Information -->
+        <div>
+          <h5>Power Gym</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt"></i> Carig Sur, Tuguegarao City</li>
+            <li><i class="bi bi-telephone"></i> (078) 123-4567</li>
+            <li><i class="bi bi-envelope"></i> powergym-management@gmail.com</li>
+          </ul>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Features</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Membership</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Schedule</a></li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div>
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-messenger"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <hr>
+      <!-- Copyright -->
+      <div class="text-center mt-3">
+        <small>&copy; 2024 Power Gym. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

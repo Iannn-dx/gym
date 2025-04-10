@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Power Gym - Premium fitness facility in Carig Sur, Tuguegarao City offering state-of-the-art equipment and expert training">
+    <title>Power Gym - Carig Sur Branch</title>
+    
+    <!-- CSS and JS -->
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/views/styles/styles.css">
+    <link rel="stylesheet" href="/views/styles/footer.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header --> 
+    <header class="fixed-top header">
+        <div class="text-white container d-flex justify-content-between align-items-center py-2">
+            <a class="d-flex align-items-center text-decoration-none" href="/" aria-label="Power Gym Home">
+                <img class="rounded-circle" src="/assets/Images/gym-logo.jpg" alt="Power Gym Logo" width="45" height="45">
+                <div class="text-white d-lg-block d-none fs-6 text-light fw-bold montserrat d-flex flex-column justify-content-center ms-2">
+                    <span>POWER GYM</span>
+                    <hr class="m-1">
+                    <span>CARIG SUR BRANCH</span>
+                </div>
+            </a>
+
+            <div class="d-flex align-items-center">
+                <div class="me-2">
+                    <i class="bi bi-envelope-fill text-white fs-5 py-2 px-2 pt-1 rounded-circle border border-light" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <h6 class="mb-0">FOR SUPPORT MAIL US:</h6>
+                    <a href="mailto:powergym-management@gmail.com" class="text-white text-decoration-none mb-0">powergym-management@gmail.com</a>
+                </div>      
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2 p-1 nav">
+            <div class="container-fluid d-flex justify-content-md-evenly">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list" aria-hidden="true"></i>
+                    <span class="visually-hidden">Menu</span>
+                </button>
+
+                <!-- Navbar components -->
+                <div class="collapse navbar-collapse d-lg-flex" id="navbar-content">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-lg-2" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-lg-2" href="#" id="feature-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                Features
+                            </a>
+                            <ul class="dropdown-menu features-menu" aria-labelledby="feature-dropdown">
+                                <li><a class="dropdown-item" href="/views/member-view/payment.html"><i class="bi bi-credit-card payment" aria-hidden="true"></i>Payments</a></li>
+                                <li><a class="dropdown-item" href="/views/member-view/member-exp.html"><i class="bi bi-star experience" aria-hidden="true"></i>Member Experience</a></li>
+                                <li><a class="dropdown-item" href="/views/member-view/loyalty.html"><i class="bi bi-gift loyal" aria-hidden="true"></i>Loyalty Program</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#memberships">Memberships</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search bar -->
+                    <form class="d-flex me-1 ms-auto mt-lg-0 mt-3" role="search">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span>
+                            <input type="search" class="form-control search-bar" placeholder="Search services..." aria-label="Search services">
+                        </div>
+                    </form>
+
+                    <!-- User profile dropdown -->
+                    <div class="dropdown me-3">
+                        <button class="btn btn-outline-dark rounded-circle text-white dropdown-toggle user-account-menu" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/assets/Images/user-icon.jpg" class="rounded-circle" width="35" height="35" alt="User Profile">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end user-account-links" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="/profile"><i class="bi bi-person" aria-hidden="true"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="/change-password"><i class="bi bi-shield-lock" aria-hidden="true"></i> Change Password</a></li>
+                            <li><a class="dropdown-item text-danger" href="/views/login.html"><i class="bi bi-box-arrow-right" aria-hidden="true"></i> Logout</a></li>
+                        </ul>
+                    </div>                                            
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero d-flex align-items-center text-white">
+            <div class="container text-center">
+                <h1 class="display-3 fw-bold mb-4">Transform Your Life at Power Gym</h1>
+                <p class="lead mb-4 px-md-5 mx-auto" style="max-width: 800px; font-family: roboto;">
+                    Join our state-of-the-art facility and experience premium fitness equipment,
+                    expert training, and a motivating community dedicated to your success.
+                </p>
+                <button class="btn btn-primary btn-lg px-5" type="button">Start Your Journey</button>
+            </div>
+        </section>
+        
+        <!-- Memberships section -->
+        <section id="memberships" class="container py-3">
+            <h2 class="text-center fw-bold fs-4 py-3">Membership Offers</h2>
+            <hr class="mt-0">       
+            <!-- Membership cards -->
+            <div class="row g-4">
+                <!-- Walk-in card -->
+                <div class="col-md-4">
+                    <div class="card h-100 membership-card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title h5 fw-bold">Walk-In</h3>
+                            <hr>
+                            <div class="display-6 fw-bold mb-3">₱100<small class="fs-6 text-muted">/visit</small></div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>No commitments</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Access all equipment</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Perfect for casual users</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Pay per visit</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="/views/member-view/payment.html" class="btn btn-outline-primary w-100">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Membership card -->
+                <div class="col-md-4">
+                    <div class="card h-100 membership-card featured-card shadow position-relative">
+                        <div class="card-body">
+                            <span class="badge bg-primary position-absolute top-0 end-0 mt-3 me-3">POPULAR</span>
+                            <h3 class="card-title h5 fw-bold">Student Membership</h3>
+                            <div class="display-6 fw-bold mb-3">₱800<small class="fs-6 text-muted">/month</small></div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Special student discounts</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Access all facilities</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Monthly renewal option</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Exclusive perks</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="/views/member-view/payment.html" class="btn btn-primary w-100">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regular Membership card -->
+                <div class="col-md-4">
+                    <div class="card h-100 membership-card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title h5 fw-bold">Regular Membership</h3>
+                            <div class="display-6 fw-bold mb-3">₱900<small class="fs-6 text-muted">/month</small></div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>All-access pass</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Priority booking</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Free assessment</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Member perks</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="/views/member-view/payment.html" class="btn btn-outline-primary w-100">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membership comparison table -->
+            <hr class="mt-4">
+            <div class="row py-3">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h3 class="card-title h4 fw-bold mb-0">Perks and Features of Registered Memberships</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-nowrap">Membership Type</th>
+                                            <th scope="col">Features</th>
+                                            <th scope="col">Perks</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Walk-In</th>
+                                            <td>
+                                                <ul>
+                                                    <li>Flexible, no commitments</li>
+                                                    <li>Access to all gym equipment</li>
+                                                    <li>One-time visits only</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>Pay-per-visit</li>
+                                                    <li>No long-term contract</li>
+                                                    <li>Open for casual users</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Student Membership</th>
+                                            <td>
+                                                <ul>
+                                                    <li>Access to all gym facilities</li>
+                                                    <li>Special student discounts</li>
+                                                    <li>Monthly renewal</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>Exclusive student perks</li>
+                                                    <li>Discounted rates</li>
+                                                    <li>Access to all gym passes</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Regular Membership</th>
+                                            <td>
+                                                <ul>
+                                                    <li>All-access gym pass</li>
+                                                    <li>Priority booking for classes</li>
+                                                    <li>Access to all sorts of equipment available</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>Free fitness assessment</li>
+                                                    <li>Discounts on merchandise (Supplements)</li>
+                                                    <li>Exclusive member perks</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <!-- Footer -->
+        <footer class="mt-auto bg-dark text-white py-4">
+            <div class="container">
+                <!-- Mobile Footer (Accordion) -->
+                <div class="accordion d-md-none" id="footerAccordion">
+                    <!-- Gym Information Section -->
+                    <div class="accordion-item bg-dark border-0">
+                        <h2 class="accordion-header" id="headingInfo">
+                            <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo" aria-expanded="true" aria-controls="collapseInfo">
+                                Power Gym Information
+                            </button>
+                        </h2>
+                        <div id="collapseInfo" class="accordion-collapse collapse show" aria-labelledby="headingInfo" data-bs-parent="#footerAccordion">
+                            <div class="accordion-body">
+                                <address class="list-unstyled text-white mb-0">
+                                    <div><i class="bi bi-geo-alt" aria-hidden="true"></i> Carig Sur, Tuguegarao City</div>
+                                    <div><i class="bi bi-telephone" aria-hidden="true"></i> <a href="tel:+0781234567" class="text-white text-decoration-none">(078) 123-4567</a></div>
+                                    <div><i class="bi bi-envelope" aria-hidden="true"></i> <a href="mailto:powergym-management@gmail.com" class="text-white text-decoration-none">powergym-management@gmail.com</a></div>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Quick Links Section -->
+                    <div class="accordion-item bg-dark border-0">
+                        <h2 class="accordion-header" id="headingLinks">
+                            <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinks" aria-expanded="false" aria-controls="collapseLinks">
+                                Quick Links
+                            </button>
+                        </h2>
+                        <div id="collapseLinks" class="accordion-collapse collapse" aria-labelledby="headingLinks" data-bs-parent="#footerAccordion">
+                            <div class="accordion-body">
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li><a href="/" class="text-white text-decoration-none">Home</a></li>
+                                        <li><a href="#features" class="text-white text-decoration-none">Features</a></li>
+                                        <li><a href="#memberships" class="text-white text-decoration-none">Memberships</a></li>
+                                        <li><a href="#schedule" class="text-white text-decoration-none">Schedule</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Social Media Section -->
+                    <div class="accordion-item bg-dark border-0">
+                        <h2 class="accordion-header" id="headingSocial">
+                            <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSocial" aria-expanded="false" aria-controls="collapseSocial">
+                                Follow Us
+                            </button>
+                        </h2>
+                        <div id="collapseSocial" class="accordion-collapse collapse" aria-labelledby="headingSocial" data-bs-parent="#footerAccordion">
+                            <div class="accordion-body">
+                                <div class="social-icons">
+                                    <a href="#" class="text-white me-3" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                                    <a href="#" class="text-white me-3" aria-label="Messenger"><i class="bi bi-messenger" aria-hidden="true"></i></a>
+                                    <a href="#" class="text-white" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Desktop Footer -->
+                <div class="row d-none d-md-flex">
+                    <!-- Gym Information -->
+                    <div class="col-md-4">
+                        <h2 class="h5">Power Gym</h2>
+                        <address class="list-unstyled">
+                            <div><i class="bi bi-geo-alt" aria-hidden="true"></i> Carig Sur, Tuguegarao City</div>
+                            <div><i class="bi bi-telephone" aria-hidden="true"></i> <a href="tel:+0781234567" class="text-white text-decoration-none">(078) 123-4567</a></div>
+                            <div><i class="bi bi-envelope" aria-hidden="true"></i> <a href="mailto:powergym-management@gmail.com" class="text-white text-decoration-none">powergym-management@gmail.com</a></div>
+                        </address>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="col-md-4">
+                        <h2 class="h5">Quick Links</h2>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li><a href="/" class="text-white text-decoration-none">Home</a></li>
+                                <li><a href="#features" class="text-white text-decoration-none">Features</a></li>
+                                <li><a href="#memberships" class="text-white text-decoration-none">Membership</a></li>
+                                <li><a href="#schedule" class="text-white text-decoration-none">Schedule</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div class="col-md-4">
+                        <h2 class="h5">Follow Us</h2>
+                        <div class="social-icons">
+                            <a href="#" class="text-white me-3" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                            <a href="#" class="text-white me-3" aria-label="Messenger"><i class="bi bi-messenger" aria-hidden="true"></i></a>
+                            <a href="#" class="text-white" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <hr>
+                
+                <!-- Copyright -->
+                <div class="text-center mt-3">
+                    <small>&copy; 2024 Power Gym. All rights reserved.</small>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>

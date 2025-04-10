@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports</title>
+       <!-- CSS & JS -->
+       <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+       <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" defer></script>
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="/views/styles/dashboard.css">
+</head>
+<body>
+     <!-- Sidebar -->
+  <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-light" id="offcanvasExampleLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex flex-column align-items-center mb-4">
+        <img 
+          class="rounded-circle mb-2" 
+          src="/assets/Images/user-icon.jpg" alt="#" height="90">
+        <div class="text-center">
+          <h4 class="text-light">Jen Smith</h4>
+          <p class="m-0 text-white-50" style="font-size: 14px;">ADMIN</p>
+        </div>
+      </div>      
+      <ul class="nav flex-column sidebar-content">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../dashboard-views/admin-dashboard.html"><i class="bi bi-speedometer me-2"></i>Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../dashboard-views/manage-members.html"><i class="bi bi-person me-2"></i>Manage Members</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../dashboard-views/view-instructor.html"><i class="fas fa-user-tie me-2"></i>View Instructors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white active" href="../dashboard-views/new-member.html"><i class="bi bi-person-plus-fill me-2"></i>New Members</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../dashboard-views/manage-payments.html"><i class="bi bi-credit-card me-2"></i>Manage Payments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../dashboard-views/reports.html"><i class="bi bi-bar-chart-line me-2"></i>Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../dashboard-views/account.html"><i class="bi bi-person-circle me-2"></i>Accounts</a>
+        </li>
+      </ul>
+      <hr class="text-danger">
+      <div class="sidebar-footer dropdown">
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="/assets/Images/user-icon.jpg" alt="User Avatar" width="30" height="30" class="rounded-circle">
+          <span class="d-none d-sm-inline mx-1">Admin</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+          <li><a class="dropdown-item text-danger" href="../login.html">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg mb-4 p-3 bg-light shadow-sm">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-lg-between w-100">
+          <div class="d-flex align-items-center">
+            <a class="btn btn-dark me-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <span class="fs-5"><i class="bi bi-list"></i></span>
+            </a>
+            <a href="#" class="navbar-brand fw-bold">Reports / <span class="fw-normal text-muted">Dashboard</span></a>
+          </div>
+          <div class="text-end">
+            <h5 class="m-0 montserrat fw-bold">Power Gym | Carig Branch</h5>
+            <h6 class="m-0 text-muted">Power Gym Management System</h6>
+          </div>
+        </div>
+      </div>
+    </nav>    
+  </div>
+
+  <!-- contenr -->
+  <div class="container-fluid py-2">
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card border-0">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h6 class="text-muted">Total Overdue</h6>
+                            <h3>₱45,250</h3>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="bi bi-cash-stack text-danger fs-1"></i>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <small><i class="bi bi-arrow-up text-danger"></i> 12% from last month</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h6 class="text-muted">Overdue Members</h6>
+                            <h3>24</h3>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="bi bi-people text-warning fs-1"></i>
+                        </div>
+                    </div>
+                    <div class="text-warning mt-2">
+                        <small class="text-success"><i class="bi bi-arrow-up"></i> 5 new this week</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h6 class="text-muted">Feedback Rating</h6>
+                            <h3>4.5/5.0</h3>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="bi bi-star-fill text-primary fs-1"></i>
+                        </div>
+                    </div>
+                    <div class="text-success mt-2">
+                        <small class="text-primary"><i class="bi bi-arrow-up"></i> 0.3 points up</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h6 class="text-muted">New Feedback</h6>
+                            <h3>18</h3>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="bi bi-chat-square-text text-success fs-1"></i>
+                        </div>
+                    </div>
+                    <div class="text-success mt-2">
+                        <small><i class="bi bi-arrow-up"></i> 7 new today</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom parr -->
+    <div class="row">
+        <!-- Overdue Payment -->
+        <div class="col-md-7 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white py-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0"><span><i class="bi bi-exclamation-diamond-fill text-danger"></i></span> Overdue Payments</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Member ID</th>
+                                    <th>Name</th>
+                                    <th>Amount</th>
+                                    <th>Due Date</th>
+                                    <th>Days Late</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>M1234</td>
+                                    <td>John Smith</td>
+                                    <td>₱2,500</td>
+                                    <td>2024-01-01</td>
+                                    <td>12</td>
+                                    <td><span class="badge bg-danger">Overdue</span></td>
+                                </tr>
+                                <tr>
+                                    <td>M1235</td>
+                                    <td>Maria Garcia</td>
+                                    <td>₱3,000</td>
+                                    <td>2024-01-05</td>
+                                    <td>8</td>
+                                    <td><span class="badge bg-warning">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>M1236</td>
+                                    <td>James Wilson</td>
+                                    <td>₱2,000</td>
+                                    <td>2024-01-10</td>
+                                    <td>3</td>
+                                    <td><span class="badge bg-warning">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>M1237</td>
+                                    <td>John Smith</td>
+                                    <td>₱2,500</td>
+                                    <td>2024-01-01</td>
+                                    <td>12</td>
+                                    <td><span class="badge bg-danger">Overdue</span></td>
+                                </tr>
+                                <tr>
+                                    <td>M1238</td>
+                                    <td>John Smith</td>
+                                    <td>₱2,500</td>
+                                    <td>2024-01-01</td>
+                                    <td>12</td>
+                                    <td><span class="badge bg-danger">Overdue</span></td>
+                                </tr>
+                                <tr>
+                                    <td>M1239</td>
+                                    <td>John Doe</td>
+                                    <td>₱2,500</td>
+                                    <td>2024-01-01</td>
+                                    <td>12</td>
+                                    <td><span class="badge bg-danger">Overdue</span></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Feedbacl-->
+        <div class="col-md-5 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white py-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Recent Member Feedback</h5>
+                        <button class="btn btn-sm btn-outline-primary">View All</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="feedback-item border-bottom pb-3 mb-3">
+                        <div class="d-flex justify-content-between mb-2">
+                            <div>
+                                <h6 class="mb-0">Sarah Johnson</h6>
+                                <small class="text-muted">2 hours ago</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">Hindi gaano maganda equipment. Goods parin naman.</p>
+                    </div>
+                    <div class="feedback-item border-bottom pb-3 mb-3">
+                        <div class="d-flex justify-content-between mb-2">
+                            <div>
+                                <h6 class="mb-0">Mike Anderson</h6>
+                                <small class="text-muted">5 hours ago</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">Trainers are very professional. Staffs are accomodating.</p>
+                    </div>
+                    <div class="feedback-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <div>
+                                <h6 class="mb-0">Kurt Axle</h6>
+                                <small class="text-muted">1 day ago</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">Goods naman kaso may bayad shower. Balik ako kapag wala na bayad.</p> <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-end gap-2">
+                <button class="btn btn-primary">
+                    <i class="bi bi-envelope me-2"></i>Send Payment Reminders
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

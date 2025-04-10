@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(224, 223, 223);
+}
+
+.sidebar-footer {
+  margin-top: 120px;
+}
+
+.dropdown-menu {
+  min-width: 150px;
+}
+
+h3{
+  font-family: 'arial';
+}
+
+.navbar{
+  background-color: rgb(235, 216, 216);
+}
+
+.card{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  
+}
+
+.card-body-dashboard{
+  background-color: #202020;
+  color: white;
+}
+
+.btn-dismiss{
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-button{
+  border-radius: 20px;
+  width: 130px;
+}
+
+.add-button-new-member{
+  border-radius: 20px;
+  width: 170px;
+}

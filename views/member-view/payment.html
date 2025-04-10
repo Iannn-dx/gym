@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <!-- CSS and JS -->
+  <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/views/styles/styles.css">
+  <!-- fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/tahoma" rel="stylesheet">
+
+  <link rel="stylesheet" href="/views/styles/styles.css">
+  <link rel="stylesheet" href="/views/styles/footer.css">
+  <style>
+    body {
+      padding-top: 100px; height: 880px;
+    }
+
+    .card-details{
+      background-color: rgb(244, 244, 244);
+    }
+  </style>
+</head>
+<body>
+    <!-- header --> 
+    <header class="fixed-top header">
+      <div class="text-white container d-flex justify-content-between align-items-center py-2">
+          <a class="d-flex align-items-center text-decoration-none" href="#">
+              <img class="rounded-circle" src="/assets/Images/gym-logo.jpg" height="45">
+              <div class="text-white d-lg-block d-none fs-6 text-light fw-bold montserrat d-flex flex-column justify-content-center ms-2">
+                  <span>POWER GYM</span>
+                  <hr class="m-1">
+                  <span>CARIG SUR BRANCH</span>
+              </div>
+          </a>
+
+          <div class="d-flex align-items-center">
+              <div class="me-2">
+                  <i class="bi bi-envelope-fill text-white fs-5 py-2 px-2 pt-1 rounded-circle border border-light"></i>
+              </div>
+              <div>
+                  <h6 class="mb-0">FOR SUPPORT MAIL US:</h6>
+                  <p class="mb-0">powergym-management@gmail.com</p>
+              </div>      
+          </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2 p-1 nav">
+          <div class="container-fluid d-flex justify-content-md-evenly">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="bi bi-list"></i>
+              </button>
+
+              <!-- navbar components -->
+              <div class="collapse navbar-collapse d-lg-flex" id="navbar-content">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active mx-lg-2" aria-current="page" href="/views/home.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle mx-lg-2" href="#" id="feature-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                              Features
+                          </a>
+                          <ul class="dropdown-menu features-menu" aria-labelledby="feature-dropdown">
+                              <li><a class="dropdown-item" href="/views/member-view/payment.html"><i class="bi bi-credit-card payment"></i>Payments</a></li>
+                              <li><a class="dropdown-item" href="/views/member-view/member-exp.html"><i class="bi bi-star experience"></i>Member Experience</a></li>
+                              <li><a class="dropdown-item" href="/views/member-view/loyalty.html"><i class="bi bi-gift loyal"></i>Loyalty Program</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link mx-lg-2" href="/views/home.html">Memberships</a>
+                      </li>
+                  </ul>
+
+                  <!-- right section; search bar -->
+                  <form class="d-flex me-1 ms-auto mt-lg-0 mt-3">
+                      <div class="input-group">
+                          <span class="input-group-text"><i class="bi bi-search"></i></span>
+                          <input type="search" class="form-control search-bar" placeholder="Search services..." aria-label="Search">
+                      </div>
+                  </form>
+
+                  <!-- user profile dropdown-menu -->
+                  <div class="dropdown me-3">
+                      <button class="btn btn-outline-dark rounded-circle text-white dropdown-toggle user-account-menu" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="/assets/Images/user-icon.jpg" class="rounded-circle" height="35" alt="User Profile Picture">
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-end user-account-links" aria-labelledby="userDropdown">
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Profile</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-shield-lock"></i> Change Password</a></li>
+                          <li><a class="dropdown-item text-danger" href="/views/login.html"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                      </ul>
+                  </div>                                            
+              </div>
+          </div>
+      </nav>
+  </header>
+
+    <!-- Payment -->
+    <div class="container mt-5">
+      <hr>
+      <h5 class=" fw-bold fs-3">Payment Options</h5>
+      <p class="small">Choose from flexible payment options to suit your schedule, with seamless online transactions and secure payment methods for your convenience. Pay with ease, anytime, anywhere!</p>
+      <hr class="mb-2 pb-2">
+   
+      <!-- content -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row bg-warning p-3 rounded m-0">
+            <div class="col-md-1 ">
+              <span class="fs-3 text-dark d-flex justify-content-end">
+                <i class="bi bi-hourglass-split"></i>
+              </span>
+            </div>
+            <div class="col-md-10 d-flex flex-column justify-content-center p-0">
+              <p class="fw-semibold text-dark mb-0" style="font-size: 18px;">Pending Verification</p>
+              <p class="text-dark small mb-0">
+                We are verifying your e-wallet account. This process may take some time. Thank you for your understanding!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- account details for cards, e-wallet-->
+       <hr>
+       <div class="card card-details mt-4">
+        <div class="card-body">
+          <h5 class="card-title">Account Details</h5>
+          <hr>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="" class="form-label">Email/Username <span class="text-danger">*</span></label>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Enter email or username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="" class="form-label">Number <span class="text-danger">*</span></label>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-wallet2"></i></span>
+                    <input type="text" class="form-control" placeholder="Enter card or e-wallet number" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="mt-4">Individual Details</h5>
+            <div class="col-md-12"><hr>
+              <div class="row">
+                <div class="col-md-5">
+                  <label for="" class="form-label">Last Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" placeholder="Enter Last Name">
+                </div>
+                <div class="col-md-5">
+                  <label for="" class="form-label">First Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" placeholder="Enter First Name">
+                </div>
+                <div class="col-md-2">
+                  <label for="" class="form-label">Contact Number <span class="text-danger">*</span></label>
+                  <input type="number" class="form-control" placeholder="Enter Contact Number">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        <!-- pay couter and e wallet -->
+       <div class="row mt-3 pb-4 mt-md-4">
+        <div class="col-md-6 mt-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pay with E-wallet</h5><hr>
+              <p class="card-text small">Choose this option to pay using popular e-wallets like GCash, PayMaya, or similar services.</p>
+            </div>
+            <div class="card-footer">
+              <a href="" class="btn btn-primary w-100 login-button">Pay With E-wallet</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="text-center">Pay at the Counter</h5><hr>
+              <p class="card-text small">Choose this option if you prefer to pay in cash or via card at the gym counter.</p>
+            </div>
+            <div class="card-footer">
+              <a href="" class="btn btn-primary w-100 login-button">Pay At the counter</a>
+            </div>
+          </div>
+        </div>
+       </div>
+      
+    </div>
+
+    <!-- Footer -->
+<footer class="mt-auto bg-dark text-white py-4">
+  <div class="container">
+    <!-- Collapsible Footer Sections -->
+    <div class="accordion d-md-none" id="footerAccordion">
+      <!-- Gym Information Section -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingInfo">
+          <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo" aria-expanded="true" aria-controls="collapseInfo">
+            Power Gym
+          </button>
+        </h2>
+        <div id="collapseInfo" class="accordion-collapse collapse show" aria-labelledby="headingInfo" data-bs-parent="#footerAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled text-white">
+              <li><i class="bi bi-geo-alt"></i> Carig Sur, Tuguegarao City</li>
+              <li><i class="bi bi-telephone"></i> (078) 123-4567</li>
+              <li><i class="bi bi-envelope-fill"></i> powergym-management@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="accordion-item bg-dark">
+        <h2 class="accordion-header" id="headingLinks">
+          <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinks" aria-expanded="false" aria-controls="collapseLinks">
+            Quick Links
+          </button>
+        </h2>
+        <div id="collapseLinks" class="accordion-collapse collapse" aria-labelledby="headingLinks" data-bs-parent="#footerAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Features</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Memberships</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Schedule</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="accordion-item bg-dark">
+        <h2 class="accordion-header" id="headingSocial">
+          <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSocial" aria-expanded="false" aria-controls="collapseSocial">
+            Follow Us
+          </button>
+        </h2>
+        <div id="collapseSocial" class="accordion-collapse collapse" aria-labelledby="headingSocial" data-bs-parent="#footerAccordion">
+          <div class="accordion-body">
+            <div class="social-icons">
+              <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-messenger"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expanded Footer for Desktop -->
+    <div class="d-none d-md-flex justify-content-between">
+      <!-- Gym Information -->
+      <div>
+        <h5>Power Gym</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-geo-alt"></i> Carig Sur, Tuguegarao City</li>
+          <li><i class="bi bi-telephone"></i> (078) 123-4567</li>
+          <li><i class="bi bi-envelope"></i> powergym-management@gmail.com</li>
+        </ul>
+      </div>
+      <!-- Quick Links -->
+      <div>
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Features</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Membership</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Schedule</a></li>
+        </ul>
+      </div>
+      <!-- Social Media -->
+      <div>
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-messenger"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <!-- Copyright -->
+    <div class="text-center mt-3">
+      <small>&copy; 2024 Power Gym. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
